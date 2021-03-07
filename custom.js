@@ -85,5 +85,5 @@ function confirmTicket(){
         alert('Please select flight ticket class');
     }else{
         alert('Your booking is successfull ! Happy Jounery ');
-    }
+    };
 }
