@@ -54,9 +54,9 @@
                     <input id="firstClass" class="inp-style inp-width" value="1" name="">
                 </div>
                 <div class="plus-minus-btn">
-                    <button onclick="increase('firstClass')" >+</button> 
+                    <button onclick="increase('firstClass', 150)" >+</button> 
                         
-                    <button onclick="decrease('firstClass')">-</button>
+                    <button onclick="decrease('firstClass', 150)">-</button>
                 </div>
             </div>
             
@@ -66,9 +66,9 @@
                     <input id="economy" class="inp-style inp-width" value="1" name="">
                 </div>
                 <div class="plus-minus-btn">
-                    <button onclick="increase('economy')">+</button> 
+                    <button onclick="increase('economy', 100)">+</button> 
                         
-                    <button onclick="decrease('economy')" >-</button>
+                    <button onclick="decrease('economy', 100)" >-</button>
                 </div>
             </div>
             <div class="calculations">
@@ -77,7 +77,7 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p>$250</p>
+                        <p id="subTotalAmount">$250</p>
                     </div>
                 </div>
 
@@ -86,7 +86,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p>$25</p>
+                        <p id="vat">$25</p>
                     </div>
                 </div>
                 <hr>
@@ -95,11 +95,11 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p>$275</p>
+                        <p id="total">$275</p>
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button onclick="confirmTicket()" id="book" class="btn-style">Book Now</button>
         </div>
 
         <div class="booking-content">
